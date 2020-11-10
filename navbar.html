@@ -1,0 +1,381 @@
+<style>
+    {
+        /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        button {
+            border: none;
+            outline: none;
+        }
+
+        .bg {
+            z-index: -99;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            min-height: 500px;
+            height: 100%;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        .bg .line {
+            width: 15.83%;
+            border-right: 2px solid rgba(0, 0, 0, 0.2) ;
+        }
+
+        .container {
+            display: flex;
+            min-width: 320px;
+            width: 100vw;
+            min-height: 500px;
+            height: 100vh;
+        } */
+    }
+    
+    li {
+        list-style: none;
+    }
+
+    /* navbar */
+    nav {
+        max-width: 1080px;
+        height: 100%;
+        width: 60px;
+        display: flex;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .main-menu {
+        border-right: 2px solid black;
+        height: 100%;
+        width: 60px;
+        background-color: white;
+        z-index: 95;
+    }
+
+    /* menu button */
+    .main-menu .menu-btn {
+        position: relative;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+        .main-menu .menu-btn .menu-btn-burger {
+            background-color: black;
+            width: 35px;
+            height: 2px;
+            border-radius: 500px;
+            transition: all .5s ease-in-out;
+        }
+
+        .main-menu .menu-btn .menu-btn-burger::before,
+        .main-menu .menu-btn .menu-btn-burger::after {
+            content: '';
+            position: absolute;
+            background-color: black;
+            width: 35px;
+            height: 2px;
+            border-radius: 500px;
+            transition: all .5s ease-in-out;
+        }
+
+        .main-menu .menu-btn .menu-btn-burger::before {
+            transform: translateY(-16px);
+        }
+
+        .main-menu .menu-btn .menu-btn-burger::after {
+            transform: translateY(16px);
+        }
+
+        /* ANIMATION */
+        .menu-btn.open .menu-btn-burger {
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+        }
+        .menu-btn.open .menu-btn-burger::before {
+            transform: rotate(45deg) translate(35px, -35px);
+        }
+        .menu-btn.open .menu-btn-burger::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+        }
+
+    /* social */
+    .main-menu .social {
+        text-align: center;
+        padding-top: 40px;
+    }
+        .main-menu .social-icon {
+            margin-bottom: 20px;
+        }
+        
+        .main-menu .social-icon i {
+            color: black;
+            font-size: 18px;
+        }
+
+        .main-menu .social-icon i:hover {
+            color: var(--primary-color);
+            transition: all 0.3s ease-in-out;
+        }
+
+    /* home button */
+        .logo {
+            height: 120px;
+            width: 322px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: -260px;
+            transition: all 0.5s ease-in-out;
+            z-index: 97;
+        }
+
+        .logo span {
+            display: none;
+        }
+
+        .logo:hover h1{
+            color: var(--primary-color);
+        }
+        
+        .logo h1 {
+            float: right;
+            color: white;
+            transform: rotate(90deg);
+            font-size: 11px;
+            letter-spacing: 4px;
+            margin-top: 55px;
+        }
+
+        .logo.open {
+            left: 0;
+        }
+
+        .logo.open h1{
+            margin-right: 20px;
+            transform: rotate(0deg);
+            
+        }
+
+    /* slide menu button */
+    .slidebar {
+        z-index: 90;
+        position: absolute;
+        border-right: 2px solid black;
+        height: 100%;
+        left: -204px;
+        width: 262px;
+        background-color: var(--primary-color);
+        transition: all 0.5s ease-in-out;
+    }
+
+        .slidebar .menu-wrapper {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-top: 90%;
+            position: relative;
+        }
+
+        .slidebar .menu-wrapper a {
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            color: white;
+        }
+
+        .slidebar .menu-wrapper a:hover {
+            color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .slidebar .menu-wrapper a.active {
+            color: black;
+        } 
+
+
+    .slidebar.open {
+        left: 60px;
+    }
+
+
+/* molibe view 425 */
+@media screen and (max-width: 425px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .main-menu {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        background-color: white;
+        border-right: 0px;
+        border-bottom: 2px solid black;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .main-menu .menu-btn {
+        width: 95px;
+        height: 100%;
+    }
+    .main-menu .social {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        padding-left: 60px;
+    }
+        .main-menu .social-icon {
+            margin: 0 10px;
+        }
+        .main-menu .social-icon i {
+            font-size: 20px;
+        }
+        .main-menu .social-icon i:active {
+            color: var(--primary-color);
+        }
+
+    .slidebar {
+        width: 100%;
+        height: 100vh;
+        padding-left: 0px;
+        padding-top: 0px;
+        top: -945px;
+        left: 0;
+        border: 0;    
+    }
+    .slidebar.open {
+        top: 60px;
+        left: 0;
+    }
+
+    .slidebar .menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        padding-top: 80px;
+    }
+
+    .slidebar .menu-wrapper li {
+        margin-bottom: 10%;
+    }
+
+    .slidebar .menu-wrapper a {
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+        .logo span {
+            display: block;
+            color: white;
+        }
+
+        .logo span:active {
+            color: var(--primary-color);
+        }
+        .logo h1 {
+            display: none;
+        }
+     
+    }
+</style>
+
+<nav>
+    <div class="main-menu">
+
+        <div class="menu-btn" onclick="show()">
+            <div class="menu-btn-burger">
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="social-icon"><a href="https://www.linkedin.com/in/amornat-t-6419161a0/"><i class="fab fa-linkedin-in"></i></a></div>
+
+            <div class="social-icon"><a href="https://www.behance.net/amornrathankra"><i class="fab fa-behance"></i></a></div>
+
+            <div class="social-icon"><a href="https://github.com/Amornrat-T"><i class="fab fa-github"></i></a></div>
+
+            <div class="social-icon"><a href="mailto:amornrat.than39@gmail.com?subject = Subject&body = Message" target="_blank"><i class="fas fa-envelope"></i></a></div>
+        </div>
+    </div>
+    <a href="index.html">
+        <div class="logo">
+            <h1>AMORNRAT</h1><span><i class="fas fa-home"></i></span>
+        </div>
+    </a>
+    <div class="slidebar">
+        <div class="menu-wrapper">
+            <li class="menu is active"> <a href="about.html">ABOUT ME</a> </li>
+            <li class="menu"> <a href="project.html">PROJECT</a> </li>
+            <li class="menu"> <a href="work.html">WORK</a> </li>
+            <!-- <a href="contact.html">CONTACT</a> -->
+        </div>
+    </div>  
+</nav>
+<script>
+
+    function show() {
+    document.querySelector('.menu-btn').classList.toggle ('open')
+    document.querySelector('.logo').classList.toggle ('open')
+    document.querySelector('.slidebar').classList.toggle ('open')
+    }
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll ('a');
+const menuLength = menuItem.length
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+            menuItem[i].className = 'active';  
+        }  
+    }
+
+</script>

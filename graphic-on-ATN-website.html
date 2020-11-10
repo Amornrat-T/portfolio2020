@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aom's portfolio - Graphics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        html {
+            overflow: visible !important;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+            overflow: visible !important;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        section {
+            margin-left: 60px;
+        }
+
+        section .landing-box {
+            background-color: #75e6da;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section .landing-box .wrapper {
+            padding-top: 8%;
+            width: 70%;
+            height: 100%;
+            padding-bottom: 8%;
+        }
+
+        section .landing-box .wrapper h1 {
+            width: 50%;
+            font-size: 3vw;
+            font-weight: normal;
+            letter-spacing: 50px;
+            margin-bottom: 5%;
+        }
+
+        section .landing-box .wrapper .landing-display img {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+            margin-bottom: 4%;
+        }
+
+        section .icon-bx {
+            background-color: #05445e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section .icon-bx .wrapper {
+            padding-top: 8%;
+            width: 70%;
+            height: 100%;
+            padding-bottom: 8%;
+        }
+
+        section .icon-bx .wrapper h1 {
+            color: white;
+            width: 50%;
+            font-size: 3vw;
+            font-weight: normal;
+            letter-spacing: 50px;
+            margin-bottom: 5%;
+        }
+
+        section .icon-bx .wrapper .icon-display .box {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section .icon-bx .wrapper .icon-display .box img {
+            width: 20%;
+        }
+
+        section .graphic-bx {
+            background-color: #189ab4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section .graphic-bx .wrapper {
+            padding-top: 8%;
+            width: 70%;
+            height: 100%;
+            padding-bottom: 5%;
+        }
+
+        section .graphic-bx .wrapper h1 {
+            width: 90%;
+            font-size: 3vw;
+            font-weight: normal;
+            letter-spacing: 50px;
+            margin-bottom: 10%;
+            color: white;
+        }
+
+        section .graphic-bx .wrapper .graphic-display .box {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section .graphic-bx .wrapper .graphic-display .box img {
+            width: 40%;
+            margin-bottom: 3%
+        }
+
+        @media (max-width:425px) {
+            section {
+                margin-left: 0;
+                margin-top: 60px;
+            }
+
+            section .landing-box .wrapper,
+            section .icon-bx .wrapper,
+            section .graphic-bx .wrapper {
+                width: 90%;
+            }
+
+            section .landing-box .wrapper h1,
+            section .icon-bx .wrapper h1, 
+            section .graphic-bx .wrapper h1 {
+                width: 100%;
+                font-size: 4vw;
+                letter-spacing: 20px;
+
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <div id="navbar"></div>
+        <section>
+            <div class="landing-box">
+                <div class="wrapper">
+                    <h1>Landing page</h1>
+                    <div class="landing-display">
+                        <img src="work img/graphic on web/landing img/landing page1.png" alt="">
+                        <img src="work img/graphic on web/landing img/landing page2.png" alt="">
+                        <img src="work img/graphic on web/landing img/landing page3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="icon-bx">
+                <div class="wrapper">
+                    <h1>Icon</h1>
+                    <div class="icon-display">
+                        <div class="box">
+                            <img src="work img/graphic on web/ICON/icon1.png" alt="">
+                            <img src="work img/graphic on web/ICON/icon2.png" alt="">
+                            <img src="work img/graphic on web/ICON/icon3.png" alt="">
+                            <img src="work img/graphic on web/ICON/icon4.png" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="work img/graphic on web/ICON/discovery.png" alt="">
+                            <img src="work img/graphic on web/ICON/select.png" alt="">
+                            <img src="work img/graphic on web/ICON/apply.png" alt="">
+                            <img src="work img/graphic on web/ICON/accepted.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graphic-bx">
+                <div class="wrapper">
+                    <h1>Graphic on website</h1>
+                    <div class="graphic-display">
+                        <div class="box">
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_accepted.png" alt="">
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_apply.png" alt="">
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_discovery.png" alt="">
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_select.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-bx" style="background-color: #d4f1f4;">
+                <div class="wrapper">
+                    <div class="icon-display">
+                        <div class="head part" style="display: flex; justify-content: center; margin-bottom: 4%;">
+                            <img src="work img/graphic on web/new page/service1@300x-8.png" alt="" style="width: 80%;">
+                        </div>
+                        <div class="box">
+                            <img src="work img/graphic on web/new page/Group 10.png" alt="" style="width: 14%;">
+                            <img src="work img/graphic on web/new page/Group 13.png" alt="" style="width: 14%;">
+                            <img src="work img/graphic on web/new page/Group 6@2x.png" alt="" style="width: 14%;">
+                            <img src="work img/graphic on web/new page/Group 8.png" alt="" style="width: 14%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+     <!-- script -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script> $(function(){ $("#navbar").load("navbar.html"); }); </script>
+</body>
+</html>

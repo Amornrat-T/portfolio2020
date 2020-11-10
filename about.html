@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aom's portfolio - About page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        html {
+            overflow: visible !important;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+            overflow: visible !important;
+        }
+
+        h1, h3, h4, h5, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+        }
+
+        .wrapper section {
+            min-width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .wrapper section:nth-child(1) {
+            margin-left: 60px;
+            min-width: 80%;
+            background-color: var(--primary-color);
+        }
+
+        .wrapper section:nth-child(2) {
+            min-width: 50%;
+            background-color: black;
+            color: white;
+            padding: 5%;
+        }
+
+        .wrapper section .welcome-bx {
+            width: 80%;
+            height: 80%;
+            position: relative;
+        }
+
+        .wrapper section .welcome-bx .hello {
+            font-size: 12vw;
+            position: absolute;
+            z-index: 2;
+            top: 60px;
+            left: 100px;
+            color: white;
+        }
+
+        .wrapper section .welcome-bx .profileimg {
+            width: 70%;
+            position: absolute;
+            top: 150px;
+            right: 100px;
+        }
+
+        .wrapper section .describe {
+            font-size: 2vw;
+            line-height: 2;
+        }
+
+        .wrapper section .skill-container {
+            height: 100%;
+            width: 80%;
+            border-left: 1px solid black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .wrapper section .skill-container .box {
+            font-size: 1.5vw;
+        }
+
+        .wrapper section .skill-container .skill-title {
+            text-align: end;
+            font-size: 5vw;
+            letter-spacing: 5px;
+            width: 70%;
+        }
+
+        .wrapper section .skill-container .box ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+
+        .wrapper section .skill-container .box ul li{
+            margin-right: 50px;
+            margin-bottom: 20px;
+            font-size: 1.5vw;
+        }
+
+        .element-pic {
+            position: absolute;
+            z-index: -1;
+            width: 88%;
+            left: 46%;
+            bottom:0;
+            filter: opacity(0.7);
+        }
+
+        .wrapper section .exp-container {
+            border-right: 1px solid black;
+            height: 100%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .wrapper section .exp-container .exp-title {
+            font-size: 5vw;
+            letter-spacing: 5px;
+        }
+
+        .wrapper section .exp-container .box {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+
+        .wrapper section .exp-container .box .detail{
+            text-align: end;
+            width: 60%;
+            font-size: 1.5vw;
+            line-height: 1.2;
+        }
+
+        .wrapper section .exp-container .box .detail ul {
+            text-align: left;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .wrapper section .exp-container .box .detail ul li{
+            list-style: circle;
+            font-size: 1.2vw;
+            line-height: 1.5;
+        }
+
+        .wrapper section .exp-container .box .date {
+            margin: 0 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1vw;
+            color: gray;
+            width: 80px;
+        }
+
+/* tablet view */
+        @media (max-width:768px) {
+            .wrapper {
+                margin: 0;
+                position: absolute;
+                flex-direction: column;
+                height: auto;
+                transform: none !important;
+            }
+
+            .wrapper section {
+                margin-left: 60px;
+                overflow: hidden;
+            }
+
+            .wrapper section:nth-child(1) {
+                min-width: 100%;
+                height: 80vh;
+            }
+
+            .wrapper section:nth-child(2) {
+                min-width: 100%;
+                height: 50vh;
+                padding: 0;
+            }
+
+            .wrapper section:nth-child(3) {
+                height: 80vh;
+            }
+
+            .element-pic {
+                position: absolute;
+                width: 100%;
+                left: 34%;
+
+            }
+
+            .wrapper section .welcome-bx,
+
+            .wrapper section .welcome-bx .hello {
+                transform: none;
+            }
+
+            .wrapper section .skill-container .box {
+                font-size: 2vw;
+            }
+
+            .wrapper section .skill-container .box ul {
+                width: 100%;
+            }
+
+            .wrapper section .skill-container .box ul li{
+                font-size: 2.5vw;
+            }
+
+
+            .wrapper section .skill-container .skill-title {
+                width: 85%;
+            }
+
+            .wrapper section .skill-container {
+                width: 95%;
+            }
+            
+            .wrapper section .exp-container .exp-title {
+                margin-bottom: 20px;
+                margin-top: 15%;
+            }
+
+            .wrapper section .exp-container .box .detail{
+                width: 100%;
+                font-size: 2.5vw;
+            }
+
+            .wrapper section .exp-container .box .detail ul li{
+                font-size: 2vw;
+            }
+
+            .wrapper section .exp-container .box .date {
+
+                font-size: 1.4vw;
+            }
+
+            .wrapper section .describe {
+                font-size: 3vw;
+                margin: 5%;
+            }
+
+        }
+    
+    /* mobile view */
+        @media (max-width: 425px) {
+
+            .wrapper section {
+                margin: 0;
+              
+            }
+            .wrapper section:nth-child(1) {
+                min-height: 50%;
+                margin: 0;
+
+            }
+
+            .wrapper section .welcome-bx .hello {
+                font-size: 20vw;
+                top: 100px;
+            }
+
+            .wrapper section .skill-container .box ul {
+                padding: 15px;
+            }
+
+            .wrapper section .skill-container .box ul li{
+                font-size: 3.5vw;
+            }
+            
+            .wrapper section .welcome-bx .profileimg {
+                width: 80%;
+                top: 210px;
+                right: 55px;
+            }
+
+            .wrapper section .describe {
+                font-size: 4vw;
+            }
+
+            .wrapper section .skill-container .box {
+                font-size: 3.5vw;
+            }
+
+            .element-pic {
+                left: 20%;
+            }
+
+            .wrapper section .exp-container .box .detail{
+                width: 100%;
+                font-size: 3.5vw;
+            }
+
+            .wrapper section .exp-container .box .detail ul li{
+                font-size: 2.8vw;
+            }
+
+            .wrapper section .exp-container .box .date {
+
+                font-size: 3vw;
+            }
+
+            .wrapper section .exp-container .box .date {
+                font-size: 2vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+<!-- navbar -->
+        <div id="navbar"></div>
+        
+
+
+        <div class="wrapper" data-0="transform:translateX(0%);" data-1000="transform:translateX(-244%);">
+
+            <section>
+                <div class="welcome-bx">
+                    <h1 class="hello">Hello!</h1>
+                    <div class="profileimg">
+                        <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                    </div>
+                </div>
+            </section>
+                
+            <section>
+                <div class="describe">
+                    <p>Hi! I'm Aom. I am a Content Creator, Designer, and newly self taught web developer, but I have worked the past year in digital content creation including inforgraphics, YouTube videos, Instagram, and social media. I am interested in developing my skills by learning new technologies and to continue my learning in web development.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="skill-container">
+                    <div class="skill-title">
+                        <h1>SKILLS</h1>
+                    </div>
+                    <div class="box">
+                        
+                            <h1>Tools</h1>
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe Premiere Pro</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        
+                    </div>
+
+                    <div class="box">
+                        
+                            <h1>Front-end</h1>
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>Jquery</li>
+                                <li>( Learning React )</li>
+                            </ul>
+                        
+                    </div>
+
+                    <div class="box">
+                        
+                            <h1>Basic Back-end</h1>
+                            <ul>
+                                <li>Nodejs</li>
+                                <li>MongoDB</li>
+                                <li>API</li>
+                                <li>Git</li>
+                            </ul>
+                        
+                    </div>
+
+                </div>
+
+                <div class="element-pic"> <img src="main img/wire frame - mock up.png" alt=""> </div>
+            </section>
+                
+            <section>
+                <div class="exp-container">
+                    <div class="exp-title">
+                        <h1>EXPERIENCE</h1>
+                    </div>
+                    <div class="box">
+                        
+                            <div class="detail">
+                                <h3>Website and Graphic Designer</h3>
+                                <h5>Athenik Technology Co.,Ltd</h5>
+                                <ul>
+                                    <li>Create customer questionnaires.</li>
+                                    <li>Research prospects and competitors for design ideas.</li>
+                                    <li>Built prototype layouts and custom designed icons, colors,  
+                                        and themes as well as website functionality using HTML, CSS, 
+                                        and JavaScript.</li>
+                                    <li>Develiverd working prototypes for users to testing and 
+                                        feedback.</li>
+                                    <li>Build a website from a prototype on Wix.com.</li>
+                                    <li>Redesigning outdated websites.</li>
+                                </ul>
+                            </div>
+                            <div class="date">
+                                June 2019 -<br>PRESENT
+                            </div>
+                       
+                    </div>
+
+                    <div class="box">
+                            
+                        <div class="detail">
+                            <h3>Digital Content/Data Creator</h3>
+                            <h5>Levco Holdings (Thailand) Ltd.</h5>
+                            <ul>
+                                <li>Created and edited video.</li>
+                                <li>Published video on social media.</li>
+                                <li>Experienced in multinational teams operating across multiple
+                                    countries and cultures.</li>
+                            </ul>
+                        </div>
+                            <div class="date">
+                                June 2019 -<br>PRESENT
+                            </div>
+                        
+                    </div>
+
+                    <div class="box">
+
+                        <div class="detail">
+                            <h3>Student Trainee (Web and Graphic Designer)</h3>
+                                <h5>T 2 Go Holiday Co.,Ltd</h5>
+                            <ul>
+                                <li>Designed website </li>
+                                <li>Created posters, infographics, and banners</li>
+                            </ul>
+                        </div>
+                            <div class="date">
+                                Jan-May,<br> 2019
+                            </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        
+
+    </div>
+    
+
+
+
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+    <script> $(function(){ $("#navbar").load("navbar.html"); }); </script>
+    <script type="text/javascript" src="skrollr.js"></script>
+        <script type="text/javascript"> var s = skrollr.init(); </script> 
+    <script>
+        document.addEventListener ('mousemove', function (e) {
+            const helloText = document.querySelector('.hello');
+            const myPic = document.querySelector('.profileimg');
+
+
+            myPic.style.right = 100 +  e.pageX/6 + 'px';
+            myPic.style.top = 150 + e.pageY/6 + 'px';
+
+            helloText.style.left = 100 +  e.pageX/6 + 'px';
+            helloText.style.top = 60 + e.pageY/6 + 'px';
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<style>
+    .bg {
+    z-index: -99;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    overflow: hidden;
+    }
+
+    .bg > div {
+        width: 15.83%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3) ;
+    }
+
+
+@media (max-width:768px) {
+    .bg > div {
+        width: 33%;
+    }
+    .bg .line2,
+    .bg .line4,
+    .bg .line6 {
+        display: none;
+    }
+}
+</style>
+
+<div class="bg">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+    <div class="line5"></div>
+    <div class="line6"></div>
+</div>
