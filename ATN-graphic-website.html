@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        html {
+            overflow: visible !important;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+            overflow: visible !important;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            margin-left: 60px;
+        }
+
+        section .wrapper {
+            background-color: #75e6da;
+        }
+
+        section .wrapper .display {
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 5%;
+            padding-top: 5%;
+        }
+
+        section .wrapper .display h1 {
+            width: 50%;
+            font-size: 3vw;
+            font-weight: normal;
+            letter-spacing: 50px;
+            margin-bottom: 5%;
+        }
+
+        section .wrapper .display .img-box img {
+            margin-bottom: 3%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <div id="navbar"></div>
+
+        <section>
+            <div class="wrapper">
+                <div class="display">
+                    <h1>Landing Page</h1>
+                    <div class="img-box">
+                        <img src="work img/graphic on web/landing img/landing page1.png" alt="">
+                        <img src="work img/graphic on web/landing img/landing page2.png" alt="">
+                        <img src="work img/graphic on web/landing img/landing page3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+<!-- script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> $(function(){ $("#navbar").load("navbar.html"); }); </script>
+</body>
+</html>
