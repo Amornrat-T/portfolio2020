@@ -81,6 +81,7 @@ img {
 
     .display-container .detail-bx .wrapper .tool-list img {
         width: 25%;
+        height: auto;
     }
 
     .display-container .detail-bx .wrapper .head-line h1{
@@ -153,6 +154,7 @@ img {
 
     .display-container .detail-bx .wrapper .tool-list img {
         width: 25%;
+        height: auto;
     }
 
     .display-container .detail-bx .wrapper .process ul{
