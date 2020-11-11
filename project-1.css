@@ -67,22 +67,23 @@ img {
 
     .display-container .detail-bx .wrapper {
        margin: 5%;
-       font-size: 1vw;
+       font-size: 1.2vw;
        line-height: 1.5;
        color: white;
-       height: 100%;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
     }
+
 
     .display-container .detail-bx .wrapper .tool-list {
         display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        justify-content: space-around;
+        width: 50%;
     }
 
-    .display-container .detail-bx .wrapper .tool-list img {
-        width: 25%;
-        height: auto;
+    .display-container .detail-bx .wrapper .tool-list div{
+        margin-left: 5px;
     }
 
     .display-container .detail-bx .wrapper .head-line h1{
@@ -99,10 +100,6 @@ img {
         list-style: circle;
         line-height: 2;
     }
-
-    .display-container .detail-bx .wrapper div{
-        margin-bottom: 20px;
-     }
 
      .display-container .detail-bx .wrapper div h1{
         margin-bottom: 10px;
@@ -128,13 +125,12 @@ img {
     .display-container .detail-bx {
         position: relative;
         width: 100%;
-        height: 112%;
+        height: 100%;
     }
     .display-container .detail-bx .wrapper {
         width: 90%;
         margin: 0 auto;
-        padding-top: 5%;
-        height: 90%;
+        height: 100%;
     }
 
     .display-container .detail-bx .wrapper .head-line h1 {
@@ -150,12 +146,12 @@ img {
     }
 
     .display-container .detail-bx .wrapper .tool-list {
-        width: 40%;
+        display: flex;
+        width: 25%;
     }
 
-    .display-container .detail-bx .wrapper .tool-list img {
-        width: 25%;
-        height: auto;
+    .display-container .detail-bx .wrapper .tool-list div{
+        margin-left: 5px;
     }
 
     .display-container .detail-bx .wrapper .process ul{
@@ -195,6 +191,10 @@ img {
 
     .display-container .detail-bx .wrapper div p {
         font-size: 5vw;
+    }
+
+    .display-container .detail-bx .wrapper .tool-list {
+        width: 40%;
     }
 
     .display-container .detail-bx .wrapper .process ul{
