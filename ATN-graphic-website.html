@@ -71,7 +71,7 @@
             margin-bottom: 5%;
         }
 
-        section .wrapper .display .img-box img {
+        section .wrapper .display .landing-box img {
             margin-bottom: 3%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
         }
@@ -96,7 +96,6 @@
         }
 
         section .wrapper-2 .display-2 .icon-box {
-            width: 90%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -104,6 +103,42 @@
 
         section .wrapper-2 .display-2 .icon-box div {
             width: 25%;
+        }
+
+        .img-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .img-box div {
+            width: 45%;
+        }
+
+        @media (max-width:425px) {
+
+            section {
+                margin-left: 0;
+                padding-top: 60px;
+            }
+
+            section .wrapper .display h1,
+            section .wrapper-2 .display-2 h1 {
+                letter-spacing: 10px;
+                font-size: 6vw;
+                width: 100%;
+            }
+
+            .img-box div {
+                width: 100%;
+            }
+
+            section .wrapper-2 .display-2 .icon-box div {
+                width: 45%;
+            }
+
+            
         }
 
     </style>
@@ -117,7 +152,7 @@
             <div class="wrapper">
                 <div class="display">
                     <h1>Landing Page</h1>
-                    <div class="img-box">
+                    <div class="landing-box">
                         <img src="work img/graphic on web/landing img/landing page1.png" alt="">
                         <img src="work img/graphic on web/landing img/landing page2.png" alt="">
                         <img src="work img/graphic on web/landing img/landing page3.png" alt="">
@@ -153,11 +188,73 @@
                         </div>
                         <div>
                             <img src="work img/graphic on web/ICON/select.png" alt=""> 
-                        </div>                                                
-                    </div>
-                    
+                        </div>                                                 
+                    </div>                   
                 </div>
             </div>
+
+            <div class="wrapper" style="background-color: #189ab4;">
+                <div class="display">
+                    <h1 style="color: white;">Graphics on website</h1>
+                    <div class="img-box">
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_accepted.png" alt="">                          
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_apply.png" alt="">
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_discovery.png" alt="">                           
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/4 steps/info_4step_select.png" alt=""> 
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="wrapper" style="background-color: #d4f1f4;">
+                <div class="display">
+                    <div class="img-box">
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/consultation_our service page.png" alt="">
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/Credibility_our service page.png" alt="">
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/one application_our service page.png" alt="">
+                        </div>
+                        <div>
+                            <img src="work img/graphic on web/info_4steps/perfect program_our service page.png" alt="">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="wrapper" style="background-color: #05445e;">
+                <div class="display">
+                    <div class="img-box">
+                        <div style="width: 100%; margin-bottom: 5%;">
+                            <img src="work img/graphic on web/new page/service1@300x-8.png" alt="">
+                        </div>
+                        <div style="width: 15%;">
+                            <img src="work img/graphic on web/new page/Group 10.png" alt="">
+                        </div>
+                        <div style="width: 15%;">
+                            <img src="work img/graphic on web/new page/Group 13.png" alt="">
+                        </div>
+                        <div style="width: 15%;">
+                            <img src="work img/graphic on web/new page/Group 6@2x.png" alt="">
+                        </div>
+                        <div style="width: 15%;">
+                            <img src="work img/graphic on web/new page/Group 8.png" alt="">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            
+            
             
         </section>
     </div>
