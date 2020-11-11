@@ -41,17 +41,18 @@ img {
 /* display */
 .display-container .display {
     position: relative;
-    width: 79.2%;
+    width: 70%;
     min-height: 100vh;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .display-container .display .gif {
     width: 80%;
-    margin: 5%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
 }
 
 
@@ -59,21 +60,23 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    width:  20%;
+    width:  29%;
     /* min-width: 250px; */
     min-height: 100vh;
     background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
     .display-container .detail-bx .wrapper {
-       margin: 5%;
-       font-size: 1.2vw;
+        width: 90%;
        line-height: 1.5;
        color: white;
-       height: 100vh;
+       height: 90vh;
        display: flex;
        flex-direction: column;
-       justify-content: space-around;
+       justify-content: space-between;
     }
 
 
@@ -82,33 +85,45 @@ img {
         width: 50%;
     }
 
-    .display-container .detail-bx .wrapper .tool-list div{
-        margin-left: 5px;
-    }
-
     .display-container .detail-bx .wrapper .head-line h1{
         color: black;
-        font-size: 2.2vw;
+        font-size: 2vw;
     }
 
     .display-container .detail-bx .wrapper .process ul{
         margin: 0;
-        padding-left: 18px;
+        padding-left: 20px;
     }
 
     .display-container .detail-bx .wrapper .process ul li {
         list-style: circle;
         line-height: 2;
+        font-size: 1.3vw;
     }
 
-     .display-container .detail-bx .wrapper div h1{
+    .display-container .detail-bx .wrapper div h1{
         margin-bottom: 10px;
         font-size: 1.8vw;
-     }
+    }
 
-     .display-container .detail-bx .wrapper div p{
+    .display-container .detail-bx .wrapper div p{
         margin-bottom: 10px;
-     }
+        font-size: 1.3vw;
+    }
+
+    .display-container .detail-bx .wrapper .link {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .display-container .detail-bx .wrapper .link a {
+        color: black;
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .display-container .detail-bx .wrapper .link a:hover {
+        color: white;
+    }
 
 
 /* tablet view */
@@ -117,32 +132,31 @@ img {
         display: block;
     }
     .display-container .display {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
+
     .display-container .detail-bx {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
     .display-container .detail-bx .wrapper {
         width: 90%;
         margin: 0 auto;
-        height: 100%;
+        height: 90vh;
     }
 
     .display-container .detail-bx .wrapper .head-line h1 {
-        font-size: 5vw;
-    }
-
-    .display-container .detail-bx .wrapper div h1 {
         font-size: 4vw;
     }
 
-    .display-container .detail-bx .wrapper div p {
+    .display-container .detail-bx .wrapper div h1 {
         font-size: 3vw;
+    }
+
+    .display-container .detail-bx .wrapper div p {
+        font-size: 2.5vw;
     }
 
     .display-container .detail-bx .wrapper .tool-list {
@@ -160,6 +174,10 @@ img {
     }
 
     .display-container .detail-bx .wrapper .process ul li {
+        font-size: 2.5vw;
+    }
+
+    .display-container .detail-bx .wrapper .link a {
         font-size: 3vw;
     }
 }
@@ -170,10 +188,6 @@ img {
         display: block;
         margin: 0;
         padding-top: 60px;
-    }
-
-    .display-container .detail-bx {
-        height: 112%;
     }
 
     .display-container .display {
@@ -203,6 +217,10 @@ img {
     }
 
     .display-container .detail-bx .wrapper .process ul li {
+        font-size: 5vw;
+    }
+
+    .display-container .detail-bx .wrapper .link a {
         font-size: 5vw;
     }
 }
