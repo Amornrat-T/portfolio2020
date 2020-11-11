@@ -35,7 +35,7 @@ button {
 
 img {
     width: 100%;
-    
+    height: auto;
 }
 
 .bg {
@@ -166,7 +166,7 @@ img {
         height: 551px;
         overflow: hidden;
         background-color: lightblue;
-
+        box-shadow: 0 0 20px rgb(0 0 0 / 20%);
         
     }
         .home-container section .content .img-box img{
@@ -224,7 +224,7 @@ img {
         height: 552px;
         overflow: hidden;
         background-color: lightblue;
-
+        box-shadow: 0 0 20px rgb(0 0 0 / 20%);
         
     }
         .home-container section .content-two .img-box img{
@@ -233,7 +233,7 @@ img {
         }
         .home-container section .content-two .img-box img:hover {
             transition-duration: 10s; 
-            transform: translate3d(0px, -1220px, 0px);
+            transform: translate3d(0px, -1070px, 0px);
         }
    
 /* content-three */
@@ -282,22 +282,13 @@ img {
 
 .home-container section .content-three .wrapper .img-box {
     width: 963px;
-    height: 551px;
+    height: 542px;
     overflow: hidden;
     background-color: lightblue;
     margin-right: 100px;
     margin-bottom: 20px;
-
-    
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);  
 }
-    .home-container section .content-three .img-box img{
-        transition-duration: 5s; 
-        transform: translate3d(0px, 0px, 0px);
-    }
-    .home-container section .content-three .img-box img:hover {
-        transition-duration: 10s; 
-        transform: translate3d(0px, -1220px, 0px);
-    }
 
 
 /* content-four */
@@ -345,24 +336,14 @@ img {
 }
 
 .home-container section .content-four .wrapper .img-box {
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-right: 5%;
     width: 963px;
-    height: 551px;
+    height: 482px;
     overflow: hidden;
     background-color: lightblue;
-
-    
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);    
 }
-    .home-container section .content-four .img-box img{
-        transition-duration: 5s; 
-        transform: translate3d(0px, 0px, 0px);
-    }
-    .home-container section .content-four .img-box img:hover {
-        transition-duration: 10s; 
-        transform: translate3d(0px, -1220px, 0px);
-    }
-
-
     
 
 @media (max-width:1024px) {

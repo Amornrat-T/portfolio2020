@@ -80,15 +80,25 @@ img {
 }
 
 .wrapper section .display .display-pic {
-    margin: 4%;
+    margin: 2%;
+    width: 100%;
 }
 .wrapper section .display .display-detail {
-    width: 40%;
+    width: 30%;
     height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-right: 4%;
+}
+
+.wrapper section .display .display-detail h1 {
+    font-size: 2.5vw;
+}
+
+.wrapper section .display .display-detail p {
+    line-height: 2;
+    font-size: 1.2vw;
 }
 
 .wrapper section .display .display-detail .view-btn {
