@@ -4,9 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aom's portfolio - Project#1</title>
-    <link rel="stylesheet" href="project-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* conttent */
+        .display-container {
+            display: flex;
+            margin-left: 60px;
+            height: 100vh;
+        }
+
+        /* display */
+        .display-container .display {
+            position: relative;
+            width: 70%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display-container .display .gif {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+            margin-top: 10%;
+            
+        }
+
+
+        .display-container .detail-bx {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width:  29%;
+            /* min-width: 250px; */
+            min-height: 100vh;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .display-container .detail-bx .wrapper {
+                width: 90%;
+            line-height: 1.5;
+            color: white;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+
+
+            .display-container .detail-bx .wrapper .tool-list {
+                display: flex;
+                width: 50%;
+            }
+
+            .display-container .detail-bx .wrapper .head-line h1{
+                color: black;
+                font-size: 2vw;
+            }
+
+            .display-container .detail-bx .wrapper .process ul{
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            .display-container .detail-bx .wrapper .process ul li {
+                list-style: circle;
+                line-height: 2;
+                font-size: 1.3vw;
+            }
+
+            .display-container .detail-bx .wrapper div h1{
+                margin-bottom: 10px;
+                font-size: 1.8vw;
+            }
+
+            .display-container .detail-bx .wrapper div p{
+                margin-bottom: 10px;
+                font-size: 1.3vw;
+            }
+
+            .display-container .detail-bx .wrapper .link {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            .display-container .detail-bx .wrapper .link a {
+                color: black;
+                font-size: 1.5vw;
+                font-weight: bold;
+            }
+            .display-container .detail-bx .wrapper .link a:hover {
+                color: white;
+            }
+
+
+        /* tablet view */
+        @media (max-width:768px) {
+            .display-container {
+                display: block;
+            }
+            .display-container .display {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .display-container .detail-bx {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+            .display-container .detail-bx .wrapper {
+                width: 90%;
+                margin: 0 auto;
+                height: 90vh;
+            }
+
+            .display-container .detail-bx .wrapper .head-line h1 {
+                font-size: 4vw;
+            }
+
+            .display-container .detail-bx .wrapper div h1 {
+                font-size: 3vw;
+            }
+
+            .display-container .detail-bx .wrapper div p {
+                font-size: 2.5vw;
+            }
+
+            .display-container .detail-bx .wrapper .tool-list {
+                display: flex;
+                width: 25%;
+            }
+
+            .display-container .detail-bx .wrapper .tool-list div{
+                margin-left: 5px;
+            }
+
+            .display-container .detail-bx .wrapper .process ul{
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            .display-container .detail-bx .wrapper .process ul li {
+                font-size: 2.5vw;
+            }
+
+            .display-container .detail-bx .wrapper .link a {
+                font-size: 3vw;
+            }
+        }
+
+        /* mobile view */
+        @media (max-width:425px) {
+            .display-container {
+                display: block;
+                margin: 0;
+                padding-top: 60px;
+            }
+
+            .display-container .display {
+                width: 100%;
+                padding: 0;
+            }
+
+            .display-container .detail-bx .wrapper .head-line h1 {
+                font-size: 7vw;
+            }
+
+            .display-container .detail-bx .wrapper div h1 {
+                font-size: 6vw;
+            }
+
+            .display-container .detail-bx .wrapper div p {
+                font-size: 5vw;
+            }
+
+            .display-container .detail-bx .wrapper .tool-list {
+                width: 40%;
+            }
+
+            .display-container .detail-bx .wrapper .process ul{
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            .display-container .detail-bx .wrapper .process ul li {
+                font-size: 5vw;
+            }
+
+            .display-container .detail-bx .wrapper .link a {
+                font-size: 5vw;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <!-- navbar -->
