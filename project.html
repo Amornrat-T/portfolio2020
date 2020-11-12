@@ -7,7 +7,241 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 <!-- style -->
-    <style></style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        html {
+            overflow: visible !important;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+            overflow: visible !important;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+        }
+
+        .wrapper section {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .wrapper section:nth-child(1) {
+            margin-left: 60px; 
+            min-width: 70%;
+            background-color: rgba(245, 245, 245, 0);
+            color: black;
+        }
+
+        .wrapper section:nth-child(1) .title-page {
+            width: 60%;
+            display: flex;
+            flex-direction: column;  
+        }
+
+        .wrapper section:nth-child(1) .title-page h1 {
+            font-size: 8vw;
+            letter-spacing: 15px;  
+        }
+
+        .wrapper section .display {
+            display: flex;
+            align-items: center;
+        }
+
+        .wrapper section .display .display-pic{
+            margin: 2%;
+            width: 100%;
+        }
+
+        .wrapper section .display .display-detail {
+            width: 30%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-right: 4%;
+        }
+
+        .wrapper section .display .display-detail h1 {
+            font-size: 2.5vw;
+        }
+
+        .wrapper section .display .display-detail p {
+            line-height: 2;
+            font-size: 1.2vw;
+        }
+
+        .wrapper section .display .display-detail .view-btn {
+            position: relative;
+            
+        }
+
+        .wrapper section .display .display-detail .view-btn:hover span{
+            width: 60%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wrapper section .display .display-detail .view-btn:hover a{
+            color: var(--primary-color);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wrapper section .display .display-detail .view-btn span{
+            top: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            position: absolute;
+        }
+
+        .wrapper section .display .display-detail .view-btn a {
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: white;
+            float: right;
+        }
+
+        .wrapper section:last-child {
+            background-color: var(--primary-color);
+        }
+
+        .wrapper section:last-child .display .display-detail {
+            color: black;
+        }
+
+        .wrapper section:last-child .display .display-detail .view-btn:hover a{
+            color: white;
+        }
+
+        .wrapper section:last-child .display .display-detail .view-btn span{
+            background-color: white;
+        }
+
+        .wrapper section:last-child .display .display-detail .view-btn a {
+            color: black;
+        }
+
+        /* tablet view */
+        @media (max-width:768px) {
+
+            .wrapper {
+                margin: 0;
+                position: absolute;
+                flex-direction: column;
+                height: auto;
+                transform: none !important;
+            }
+
+            .wrapper section {
+                margin-left: 60px;
+                min-width: 90%;
+                height: 95vh;
+            }
+
+            .wrapper section:nth-child(1) .title-page h1 {
+                font-size: 10vw;
+            }
+
+            .wrapper section .display {
+                flex-direction: column;
+            }
+
+            .wrapper section .display .display-pic {
+                margin: 2%;
+            }
+
+            .wrapper section .display .display-detail {
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-right: 0;
+            }
+
+            .wrapper section .display .display-detail h1 {
+                margin-bottom: 10px;
+            }
+
+            .wrapper section .display .display-detail p {
+                margin-bottom: 10px;
+            } 
+
+            .wrapper section .display .display-detail .view-btn a {
+                font-size: 3vw;
+            }
+
+
+            .wrapper section .display .display-detail .view-btn a {
+                font-size: 2.5vw;
+            }
+        }
+
+        @media (max-width:425px) {
+            .wrapper section {
+                margin-left: 0;
+                height: 65vh;
+            }
+
+            .wrapper section:nth-child(1) {
+                margin-left: 0; 
+            }
+
+            .wrapper section .display .display-detail h1 {
+                font-size: 5.5vw;
+                margin-bottom: 10px;
+            }
+
+            .wrapper section .display .display-detail p {
+                font-size: 3.5vw;
+                margin-bottom: 10px;
+            } 
+
+            .wrapper section .display .display-detail .view-btn a {
+                font-size: 4vw;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -29,7 +263,7 @@
             <section>
                 <div class="display">
                     <div class="display-pic">
-                        <img src="gallery/overview.gif" alt="">
+                        <img src="main img/Home – 4.png" alt="">
                     </div>
                     <div class="display-detail">
                         <h1>Gallery Web Design Parallax</h1>
@@ -49,7 +283,7 @@
             <section>
                 <div class="display">
                     <div class="display-pic">
-                        <img src="main img/Asset 13@300x-100.jpg" alt="">
+                        <img src="flight booking/Mask Group 3.png" alt="">
                     </div>
                     <div class="display-detail">
                         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
