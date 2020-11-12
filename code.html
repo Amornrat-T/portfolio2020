@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aom's portfolio - Code page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+<!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        :root {
+            --primary-color: #b2a4d4;
+        }
+
+        html {
+            overflow: visible !important;
+        }
+
+        body{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+            background-color: whitesmoke;
+            overflow: visible !important;
+        }
+
+        h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+        }
+
+        .wrapper section {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .wrapper section:nth-child(1) {
+            margin-left: 60px; 
+            min-width: 70%;
+            background-color: rgba(245, 245, 245, 0);
+            color: black;
+        }
+
+        .wrapper section:nth-child(1) .title-page {
+            width: 60%;
+            display: flex;
+            flex-direction: column;  
+        }
+
+        .wrapper section:nth-child(1) .title-page h1 {
+            font-size: 8vw;
+            letter-spacing: 15px;  
+            text-align: center;
+        }
+
+        .wrapper section .display {
+            display: flex;
+            align-items: center;
+        }
+
+        
+        /* tablet view */
+        @media (max-width:768px) {
+
+            .wrapper {
+                margin: 0;
+                position: absolute;
+                flex-direction: column;
+                height: auto;
+                transform: none !important;
+            }
+
+            .wrapper section {
+                margin-left: 60px;
+                min-width: 90%;
+                height: 95vh;
+            }
+
+            .wrapper section:nth-child(1) {
+                height: 80vh;
+            }
+
+            .wrapper section:nth-child(1) .title-page h1 {
+                font-size: 10vw;
+                transform: none;
+            }
+        }
+
+        @media (max-width:425px) {
+            .wrapper section {
+                margin-left: 0;
+                height: 65vh;
+            }
+
+            .wrapper section:nth-child(1) {
+                margin-left: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- navbar -->
+        <div id="navbar"></div>
+
+        <div id="background"></div>
+
+        <div class="wrapper" data-0="transform:translateX(0%);" data-1000="transform:translateX(-374%);">
+
+            <section>
+                <div class="title-page">
+                    <h1>Code</h1>
+                </div>
+            </section>
+<!-- section1 -->
+            <section>
+                <div class="content-box">
+                    
+                </div>
+            </section>
+<!-- section2 -->
+            <section>
+                
+            </section>
+<!-- section3 -->
+            <section>
+               
+            </section>
+<!-- section4 -->
+            <section>
+               
+            </section>
+
+        </div>
+
+    </div>
+    
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> $(function(){ $("#navbar").load("navbar.html"); }); </script>
+    <script> $(function(){ $("#background").load("background.html"); }); </script>
+    <script type="text/javascript" src="skrollr.js"></script>
+        <script type="text/javascript"> var s = skrollr.init(); </script> 
+</body>
+</html>
