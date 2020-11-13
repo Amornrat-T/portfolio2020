@@ -80,18 +80,24 @@
 
             .display-container .detail-bx .wrapper {
                 width: 90%;
-            line-height: 1.5;
-            color: white;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+                line-height: 1.5;
+                color: white;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
             }
 
 
             .display-container .detail-bx .wrapper .tool-list {
                 display: flex;
-                width: 50%;
+                justify-content: space-between;
+                width: 40%;
+            }
+
+            .display-container .detail-bx .wrapper .tool-list div {
+                width: 25%;
             }
 
             .display-container .detail-bx .wrapper .head-line h1{
@@ -121,17 +127,21 @@
             }
 
             .display-container .detail-bx .wrapper .link {
-                width: 100%;
+                width: 90%;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
+                margin-top: 10px;
+                align-items: center;
             }
             .display-container .detail-bx .wrapper .link a {
                 color: black;
-                font-size: 1.5vw;
+                font-size: 1.8vw;
                 font-weight: bold;
+                transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
             }
             .display-container .detail-bx .wrapper .link a:hover {
                 color: white;
+                transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
             }
 
 
@@ -154,6 +164,7 @@
                 width: 90%;
                 margin: 0 auto;
                 height: 90vh;
+                align-items: initial;
             }
 
             .display-container .detail-bx .wrapper .head-line h1 {
@@ -213,7 +224,7 @@
             }
 
             .display-container .detail-bx .wrapper div p {
-                font-size: 5vw;
+                font-size: 4vw;
             }
 
             .display-container .detail-bx .wrapper .tool-list {
@@ -226,13 +237,21 @@
             }
 
             .display-container .detail-bx .wrapper .process ul li {
-                font-size: 5vw;
+                font-size: 4vw;
             }
 
             .display-container .detail-bx .wrapper .link a {
                 font-size: 5vw;
             }
         }
+
+        @media (max-width:375px) {
+            .display-container .detail-bx .wrapper div p,
+            .display-container .detail-bx .wrapper .process ul li {
+                font-size: 4.5vw;
+            }
+        }
+
 
     </style>
 </head>

@@ -76,7 +76,8 @@
         .wrapper section:nth-child(1) .title-page {
             width: 60%;
             display: flex;
-            flex-direction: column;  
+            flex-direction: column;
+            align-items: center;   
         }
 
         .wrapper section:nth-child(1) .title-page h1 {
@@ -85,10 +86,99 @@
             text-align: center;
         }
 
-        .wrapper section .display {
+        .wrapper section .content-box {
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
         }
+
+        .wrapper section .content-box .display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper section .content-box .display div .light {
+            display: none;
+        }
+
+        .wrapper section .content-box .display div:hover .light {
+            display: block;
+        }
+
+        .wrapper section .content-box .display div:hover img {
+            display: none;
+        }
+
+        .wrapper section .content-box .detail {
+            width: 50%;
+            color: white;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 5%;
+            font-size: 1.5vw;
+        }
+
+        .wrapper section .content-box .detail .title p {
+            margin-top: 5%;
+        }
+
+        .wrapper section .content-box .detail .tool-bx .tools{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+        }
+
+        .wrapper section .content-box .detail .link-bx {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wrapper section .content-box .detail .link {
+            width: 50%;
+            font-size: 1.8vw;
+            font-weight: bold;
+        }
+
+        .wrapper section .content-box .detail .link a {           
+            color: var(--primary-color);
+            transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+        }
+
+        .wrapper section .content-box .detail .link a:hover {
+            color: white;
+            margin-left: 5%;
+            transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+        }
+
+        /* last child */
+        .wrapper section:last-child {
+            background-color: var(--primary-color);
+        }
+
+        .wrapper section:last-child .content-box .detail {
+            color: black;
+        }
+
+        .wrapper section:last-child .content-box .detail .link a {           
+            color: white;
+            transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+        }
+
+        .wrapper section:last-child .content-box .detail .link a:hover {
+            color: black;
+            margin-left: 5%;
+            transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+        }
+
+
+
 
         
         /* tablet view */
@@ -104,18 +194,58 @@
 
             .wrapper section {
                 margin-left: 60px;
-                min-width: 90%;
+                min-width: 100%;
                 height: 95vh;
             }
 
             .wrapper section:nth-child(1) {
-                height: 80vh;
+                height: 65vh;
             }
 
             .wrapper section:nth-child(1) .title-page h1 {
                 font-size: 10vw;
                 transform: none;
             }
+
+            .wrapper section .content-box {
+                flex-direction: column;
+                width: 80%;
+                height: 90%;
+            }
+
+            .wrapper section .content-box .detail {
+                width: 100%;
+                margin-left: 0;
+                font-size: 2.5vw;
+                margin-top: 3%;
+            }
+
+            .wrapper section .content-box .detail .title p {
+                margin-top: 2%;
+            }
+
+            .wrapper section .content-box .detail .tool-bx {
+                margin-top: 5%;
+            }
+
+            .wrapper section .content-box .detail .tool-bx .tools{
+                width: 50%;
+            }
+
+            .wrapper section .content-box .detail .link-bx {
+                width: 100%;
+                display: flex;
+                margin-top: 5%;
+                float: right;
+            }
+
+            .wrapper section .content-box .detail .link {
+                width: 50%;
+                font-size: 3vw;
+                font-weight: bold;
+            }
+
+
         }
 
         @media (max-width:425px) {
@@ -140,7 +270,7 @@
         <div id="background"></div>
 
         <div class="wrapper" data-0="transform:translateX(0%);" data-1000="transform:translateX(-374%);">
-
+<!-- title -->
             <section>
                 <div class="title-page">
                     <h1>Code</h1>
@@ -149,20 +279,157 @@
 <!-- section1 -->
             <section>
                 <div class="content-box">
-                    
+                    <div class="display">
+                        <div>
+                            <img src="code img/dark-mode.png" alt="" class="light">
+                            <img src="code img/light-mode.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h1> Light-Dark mode Website</h1>
+                            <p>This is a project that lets the user toggle between a light and dark theme for the website.</p>
+                        </div>
+                        
+
+                        <div class="tool-bx">
+                            <h1>Tools</h1>
+                            <div class="tools">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>LocalHost</p>
+                            </div>
+                        </div>
+
+                        <div class="link-bx">
+                            <div class="link">
+                                <a href="https://github.com/Amornrat-T/light-dark-mode">Source Code</a>                           
+                            </div>
+    
+                            <div class="link">
+                                <a href="https://amornrat-t.github.io/light-dark-mode/">Live view</a>            
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
                 </div>
             </section>
 <!-- section2 -->
             <section>
-                
+                <div class="content-box">
+                    <div class="display-two">
+                        <div>
+                            <img src="code img/infinite-scroll.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h1>Infinite Scroll</h1>
+                            <p>This project was for me to learn how to create a website that will continously load photos as you scroll.
+                            </p>
+                        </div>
+                        
+
+                        <div class="tool-bx">
+                            <h1>Tools</h1>
+                            <div class="tools">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>API</p>
+                            </div>
+                        </div>
+
+                        <div class="link-bx">
+                            <div class="link">
+                                <a href="https://github.com/Amornrat-T/infinite-scroll">Source Code</a>                           
+                            </div>
+    
+                            <div class="link">
+                                <a href="https://amornrat-t.github.io/infinite-scroll/">Live view</a>            
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
             </section>
 <!-- section3 -->
             <section>
-               
+                <div class="content-box">
+                    <div class="display-two">
+                        <div>
+                            <img src="code img/candy-web.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h1>Candy Museum Website</h1>
+                            <p>This project, I get a chance to try out Bootstrap framework for building a responsive website.
+                            </p>
+                        </div>
+                        
+
+                        <div class="tool-bx">
+                            <h1>Tools</h1>
+                            <div class="tools">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>jQuery</p>
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="link-bx">
+                            <div class="link">
+                                <a href="https://github.com/Amornrat-T/candy-museum">Source Code</a>                           
+                            </div>
+    
+                            <div class="link">
+                                <a href="https://amornrat-t.github.io/candy-museum/">Live view</a>            
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
             </section>
 <!-- section4 -->
             <section>
-               
+                <div class="content-box">
+                    <div class="display-two">
+                        <div>
+                            <img src="code img/color-game.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h1>Color Game</h1>
+                            <p>An interesting Color-guessing game which built in plain javascript, HTML5 and CSS.
+                            </p>
+                        </div>
+                        
+
+                        <div class="tool-bx">
+                            <h1>Tools</h1>
+                            <div class="tools">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+
+                        <div class="link-bx">
+                            <div class="link">
+                                <a href="https://github.com/Amornrat-T/color-game">Source Code</a>                           
+                            </div>
+    
+                            <div class="link">
+                                <a href="https://amornrat-t.github.io/color-game/">Live view</a>            
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
             </section>
 
         </div>
