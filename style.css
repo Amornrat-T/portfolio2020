@@ -282,11 +282,10 @@ img {
 
 .home-container section .content-three .wrapper .img-box {
     width: 963px;
-    height: 542px;
-    overflow: hidden;
-    
+    /* height: 542px; */
+    overflow: hidden;  
     margin-right: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);  
 }
 
@@ -339,9 +338,8 @@ img {
     margin-top: 5%;
     margin-right: 5%;
     width: 963px;
-    height: 482px;
-    overflow: hidden;
-    
+    /* height: 482px; */
+    overflow: hidden;   
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);    
 }
     
