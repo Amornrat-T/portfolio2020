@@ -59,6 +59,7 @@ img {
     width: 100%;
     min-height: 500px;
     height: 100vh;
+    
 }
 
 /* title */
@@ -105,6 +106,7 @@ img {
     height: 100%;
     display: flex;
     margin-left: 60px;
+   
 }
     .home-container section {
         min-width: 100%;
